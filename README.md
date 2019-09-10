@@ -5,3 +5,7 @@
 devtools::install_github("nicoleburke/Social-Network-Survey")
 
 library(SocialNetworkSurvey)
+
+### How to use
+
+Instructions forthcoming!
