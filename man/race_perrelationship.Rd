@@ -1,14 +1,14 @@
-\name{gender_perrelationship}
-\alias{gender_perrelationship}
+\name{race_perrelationship}
+\alias{race_perrelationship}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-gender - extracts the gender of each node
+race - extracts the race of each node
 }
 \description{
-This function extracts the gender of each node for each subject. This function should be used after the relationship dataframe has been created.
+This function extracts the race of each node for each subject. This function should be used after the relationship dataframe has been created.
 }
 \usage{
-gender_perrelationship(qualtricsoutput, relationshipdf)
+race_perrelationship(qualtricsoutput, relationshipdf)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -23,7 +23,7 @@ This is the Qualtrics dataframe. Make sure to run 'clean_qualtrics' before you r
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-This function will return the relationshipdf with the added gender information. Make sure to assign the relationshipdf to this function (see example).
+This function will return the relationshipdf with the added race information. Make sure to assign the relationshipdf to this function (see example).
 }
 \references{
 %% ~put references to the literature/web site here ~
