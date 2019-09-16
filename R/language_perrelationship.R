@@ -54,14 +54,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Parent 2") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            lang <- as.character(lang)
+            # if data is blank, print "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
+            # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -75,16 +77,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Parent 4") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -98,16 +100,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Parent 4") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -121,16 +123,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Sibling 1") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -144,16 +146,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Sibling 2") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -167,16 +169,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Sibling 4") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -190,16 +192,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Sibling 4") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -213,16 +215,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Sibling 5") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -236,16 +238,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Sibling 6") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -259,16 +261,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Sibling 7") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -282,16 +284,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Sibling 8") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -305,16 +307,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Sibling 9") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -328,16 +330,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Sibling 10") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -351,16 +353,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 1") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -374,16 +376,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 2") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -397,16 +399,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 3") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -420,16 +422,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 4") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -443,16 +445,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 5") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -466,16 +468,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 6") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -489,16 +491,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 7") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -512,16 +514,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 8") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -535,16 +537,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 9") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -558,16 +560,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 10") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -581,16 +583,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Teacher 1") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -604,16 +606,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Teacher 2") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -627,16 +629,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Teacher 3") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -650,16 +652,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Teacher 4") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -673,16 +675,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Teacher 5") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -696,16 +698,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Daycare Class") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -719,16 +721,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 1 Parent 1") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -742,16 +744,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 1 Parent 2") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -765,16 +767,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 2 Parent 1") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -788,16 +790,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 2 Parent 2") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -811,16 +813,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 1 Teacher") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -834,16 +836,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 2 Teacher") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -857,16 +859,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 3 Teacher") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -880,16 +882,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 4 Teacher") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -903,16 +905,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 5 Teacher") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -926,16 +928,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 6 Teacher") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -949,16 +951,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 7 Teacher") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -972,16 +974,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 8 Teacher") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -995,16 +997,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 9 Teacher") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -1018,16 +1020,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 10 Teacher") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -1041,16 +1043,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 1 Kids") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -1064,16 +1066,39 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 2 Kids") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
+            }
+          }
+        }
+      }
+      ############################################## EXTRACIR CLASS 3 KIDS
+      if (relationshipdf$Nodes[i] == "Extracurricular Class 3 Kids") {
+        print("s")
+        print(s)
+        # 's' will specify what row to look for in the qualtricsoupt, we need the column index
+        indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
+        for (x in 1:length(indexcol)) {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 3 Kids") {
+            # get the value in qualdricsoutput
+            lang <- qualtricsoutput[s,indexcol[x]+89]
+            # needs to be a value
+            lang <- as.character(lang)
+            # if data is blank, print "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,6] <- lang
             }
           }
         }
@@ -1087,39 +1112,16 @@ language_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 4 Kids") {
             # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
+            lang <- qualtricsoutput[s,indexcol[x]+89]
             # needs to be a value
-            race <- as.character(race)
+            lang <- as.character(lang)
             # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
+            if (lang == "") {
+              relationshipdf[i,6] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,4] <- race
-            }
-          }
-        }
-      }
-      ############################################## EXTRACIR CLASS 4 KIDS
-      if (relationshipdf$Nodes[i] == "Extracurricular Class 4 Kids") {
-        print("s")
-        print(s)
-        # 's' will specify what row to look for in the qualtricsoupt, we need the column index
-        indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
-        for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 4 Kids") {
-            # get the value in qualdricsoutput
-            race <- qualtricsoutput[s,indexcol[x]+87]
-            # needs to be a value
-            race <- as.character(race)
-            # if data is blank, print "MISSING"
-            if (race == "") {
-              relationshipdf[i,4] <- "MISSING"
-            }
-            # otherwise, print value
-            else {
-              relationshipdf[i,4] <- race
+              relationshipdf[i,6] <- lang
             }
           }
         }
