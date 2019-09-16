@@ -1607,14 +1607,14 @@ race_perrelationship <- function(qualtricsoutput, relationshipdf) {
           }
         }
       }
-      ############################################## EXTENDED FAM 14
-      if (relationshipdf$Nodes[i] == "ExtendedFam 14") {
+      ############################################## EXTENDED FAM 13
+      if (relationshipdf$Nodes[i] == "ExtendedFam 13") {
         print("s")
         print(s)
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam14") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam13") {
             # get the value in qualdricsoutput
             race <- qualtricsoutput[s,indexcol[x]+87]
             # needs to be a value
