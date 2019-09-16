@@ -1078,14 +1078,14 @@ race_perrelationship <- function(qualtricsoutput, relationshipdf) {
           }
         }
       }
-      ############################################## EXTRACIR CLASS 4 KIDS
-      if (relationshipdf$Nodes[i] == "Extracurricular Class 4 Kids") {
+      ############################################## EXTRACIR CLASS 3 KIDS
+      if (relationshipdf$Nodes[i] == "Extracurricular Class 3 Kids") {
         print("s")
         print(s)
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 4 Kids") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 3 Kids") {
             # get the value in qualdricsoutput
             race <- qualtricsoutput[s,indexcol[x]+87]
             # needs to be a value
