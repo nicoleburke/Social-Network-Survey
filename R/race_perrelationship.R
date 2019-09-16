@@ -1308,14 +1308,14 @@ race_perrelationship <- function(qualtricsoutput, relationshipdf) {
           }
         }
       }
-      ############################################## DAYCARE ASSISTANT 4
-      if (relationshipdf$Nodes[i] == "Daycare Assistant 4") {
+      ############################################## DAYCARE ASSISTANT 3
+      if (relationshipdf$Nodes[i] == "Daycare Assistant 3") {
         print("s")
         print(s)
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Daycare Assistant 4") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Daycare Assistant 3") {
             # get the value in qualdricsoutput
             race <- qualtricsoutput[s,indexcol[x]+87]
             # needs to be a value
