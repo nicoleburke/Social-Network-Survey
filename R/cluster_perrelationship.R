@@ -54,14 +54,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Parent 2") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            cluster <- as.character(cluster)
+            # if data is blank, print "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
+            # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -75,16 +77,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Parent 3") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -98,16 +100,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Parent 4") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -121,16 +123,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Sibling 1") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -144,16 +146,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Sibling 2") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -167,16 +169,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Sibling 3") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -190,16 +192,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Sibling 4") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -213,16 +215,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Sibling 5") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -236,16 +238,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Sibling 6") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -259,16 +261,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Sibling 7") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -282,16 +284,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Sibling 8") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -305,16 +307,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Sibling 9") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -328,16 +330,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Sibling 10") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -351,16 +353,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 1") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -374,16 +376,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 2") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -397,16 +399,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 3") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -420,16 +422,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 4") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -443,16 +445,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 5") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -466,16 +468,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 6") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -489,16 +491,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 7") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -512,16 +514,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 8") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -535,16 +537,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 9") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -558,16 +560,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 10") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -581,16 +583,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Teacher 1") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -604,16 +606,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Teacher 2") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -627,16 +629,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Teacher 3") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -650,16 +652,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Teacher 4") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -673,16 +675,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Teacher 5") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -696,16 +698,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Daycare Class") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -719,16 +721,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 1 Parent 1") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -742,16 +744,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 1 Parent 2") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -765,16 +767,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 2 Parent 1") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -788,16 +790,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 2 Parent 2") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -811,16 +813,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 1 Teacher") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -834,16 +836,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 2 Teacher") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -857,16 +859,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 3 Teacher") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -880,16 +882,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 4 Teacher") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -903,16 +905,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 5 Teacher") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -926,16 +928,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 6 Teacher") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -949,16 +951,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 7 Teacher") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -972,16 +974,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 8 Teacher") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -995,16 +997,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 9 Teacher") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1018,16 +1020,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 10 Teacher") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1041,16 +1043,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 1 Kids") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1064,16 +1066,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 2 Kids") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1087,16 +1089,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 3 Kids") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1110,16 +1112,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 4 Kids") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1133,16 +1135,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 5 Kids") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1156,16 +1158,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 6 Kids") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1179,16 +1181,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 7 Kids") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1202,16 +1204,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 8 Kids") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1225,16 +1227,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 9 Kids") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1248,16 +1250,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 10 Kids") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1271,16 +1273,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Daycare Assistant 1") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1294,16 +1296,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Daycare Assistant 2") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1317,16 +1319,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Daycare Assistant 3") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1340,16 +1342,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam1") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1363,16 +1365,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam2") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1386,16 +1388,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam3") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1409,16 +1411,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam4") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1432,16 +1434,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam5") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1455,16 +1457,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam6") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1478,16 +1480,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam7") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1501,16 +1503,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam8") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1524,16 +1526,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam9") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1547,16 +1549,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam10") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1570,16 +1572,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam11") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1593,16 +1595,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam12") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1616,16 +1618,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam13") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1639,16 +1641,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam14") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1662,16 +1664,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam15") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1685,16 +1687,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Grandparent 1") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1708,16 +1710,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Grandparent 2") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1731,16 +1733,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Grandparent 3") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1754,16 +1756,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Grandparent 4") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1777,16 +1779,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Grandparent 5") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1800,16 +1802,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Nanny/Babysitter 1") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1823,16 +1825,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Nanny/Babysitter 2") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1846,16 +1848,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Other 1") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1869,16 +1871,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Other 2") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1892,16 +1894,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Other 3") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
@@ -1915,16 +1917,16 @@ cluster_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Other 4") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+84]
+            cluster <- qualtricsoutput[s,indexcol[x]+90]
             # needs to be a value
-            gender <- as.character(gender)
+            cluster <- as.character(cluster)
             # if data is blank, print "MISSING"
-            if (gender == "") {
-              relationshipdf[i,3] <- "MISSING"
+            if (cluster == "") {
+              relationshipdf[i,7] <- "MISSING"
             }
             # otherwise, print value
             else {
-              relationshipdf[i,3] <- gender
+              relationshipdf[i,7] <- cluster
             }
           }
         }
