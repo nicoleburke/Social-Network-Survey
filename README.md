@@ -8,4 +8,4 @@ library(SocialNetworkSurvey)
 
 ### How to use
 
-Instructions forthcoming!
+This code and package was to automate the demographic data for public-museum based testing. That survey is no longer being used because we are no longer testing at museums! 
